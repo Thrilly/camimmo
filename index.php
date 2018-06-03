@@ -2,13 +2,8 @@
 include("config.php");
 session_start();
 
-if ((isset($_GET['controller']) && isset($_GET['action']))) {
-  $controller = $_GET["controller"];  
-  $action = $_GET["action"];  
-} else {
-  $controller = "contact";
-  $action = "index";
-}
+$controller = (isset($_GET['controller'])) ? $_GET["controller"] : "contact";
+$action = (isset($_GET['action'])) ? $_GET["action"] : "index";
 $controller .= "Controller";
 $action .= "Action";
 

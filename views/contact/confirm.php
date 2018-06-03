@@ -2,7 +2,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-2 col-md-offset-5">
-            <img src="images/camimmo_logo.png" class=logo>
+            <center>
+                <img src="images/camimmo_logo.png" class=logo>
+            </center>
         </div>
     </div>
     <div class="row">

@@ -7,9 +7,14 @@ class indexAdminController extends AdminController
 	
 	function indexAction(){	
 		$this->loadModel("Messages");
-		$msgs = $this->Messages->getMessages();
+		$msgsDb = $this->Messages->getMessages();
+		$msgs = array();
+		foreach ($msgsDb as $value) {
+			$msgs[$value["id_message"]] = $value;
+		}
 		$this->setData(array(
 			"msgs" => $msgs,
+			"msgsJson" => json_encode($msgs),
 		));
 		$this->render($this->dir_view, "index");
 	}

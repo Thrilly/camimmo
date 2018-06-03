@@ -1,8 +1,10 @@
 <!--MultiStep Form -->
 <div class="container">
     <div class="row">
-        <div class="col-md-2 col-md-offset-5 hidden-sm hidden-xs">
-            <img src="images/camimmo_logo.png" class="logo">
+        <div class="col-md-2 col-md-offset-5 hidden-sm hidden-xs" class="logo">
+            <center>
+                <img src="images/camimmo_logo.png" class=logo>
+            </center>
         </div>
     </div>
     <div class="row">
@@ -16,8 +18,8 @@
                 <fieldset>
                     <h2 class="fs-title">Connexion</h2>
                     <h3 class="fs-subtitle">Espace réservé aux administrateurs</h3>
-                    <input type="txt" name="login" placeholder="Login"/>
-                    <input type="text" name="password" placeholder="Mot de passe"/>
+                    <input type="text" name="login" placeholder="Login"/>
+                    <input type="password" name="password" placeholder="Mot de passe"/>
                     <input type="button" name="previous" class="previous action-button-previous" value="Précédent"/>
                     <input type="submit" name="submit" class="submit action-button" value="Envoyer"/>
                 </fieldset>
